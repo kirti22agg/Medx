@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.seconddiv{
+    background: url("https://media.istockphoto.com/vectors/white-shopping-bag-for-medical-pills-vector-id896796098?k=6&m=896796098&s=612x612&w=0&h=GcI6IHKtao2QTV1K1InCxW4zYpbtHzB5hWtApfkRPNc=");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.mainlogo{
+    width: 130px;
+    height: 46px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#signupbtn{
+    border-radius: 0px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+#signupbtn2{
+    border-radius: 0px !important;
+    padding: 8px 16px !important;
+
+}
+select.form-control:not([size]):not([multiple]){
+    height: 44px !important;
+}
+.form-control:hover {
+    box-shadow: none !important;
+  }
+.form-control {
+    box-shadow: none !important;
+  }
+.headingdiv{
+    padding: 40px;
+    padding-bottom: 0px !important;
+}
+.subhead{
+    padding-left: 42px;
+    font-weight: 400;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select{
+    display: inline;
+}
+.medicine{
+    font-weight: 400;
+}
+.head4{
+    font-weight: 400;
+}
+.side{
+    margin-left: 46px;
+}
+.inputs{
+    padding: 9px 145px !important;
+}
+.parallax {
+    
+    background-image: 
+    url("https://www.toppan.com/en/news/2020/08/t5v1940000000jq1-img/Todokusuri.jpg");
+    height: 500px;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ml4 {
+    position: relative;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0;
+}
+
+.ml3 {
+    font-weight: 500;
+    font-size: 2em;
+}
+.main9{
+    background: url("../photos/kar.png");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    
+}
+.maincon{
+    width: 100%;
+    height: 100%;
+}
+.para{
+    font-family: 'Roboto', sans-serif;
+}
+.heading{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.name{
+    font-style: italic;
+}
+.mainheight{
+    height: 500px;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url('../photos/1492.gif')center #fff;
+    z-index: 1;
+    background-repeat: no-repeat;
+
+}
+.mango{
+    display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 300px){
+    .headingdiv{
+        padding: 13px !important;
+    }
+    .subhead{
+        padding-left: 13px !important;
+    }
+    .inputs{
+        width: 100%;
+    }
+    
+    #signupbtn2{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        margin-top: 14px;
+    }
+    .seconddiv{
+        display: none;
+    }
+    .main9{
+        height: 327px;
+    }
+    .parallax{
+        max-height: 360px !important;
+    }
+    .mainheight{
+        height: 250px;
+    }
+    .thank{
+        font-size: 20px;
+    }
+    .mainlogo{
+
+        width: 141px;
+        height: 49px;
+    }
+    .inputs{
+        padding: 9px 80px !important;
+    }
+    .parallax{
+        max-height: 360px !important;
+        background-image: 
+        url("https://previews.123rf.com/images/abdie11/abdie112004/abdie11200400022/144986070-shop-from-home-shopping-delivery-man-riding-scooter-bike-delivering-grocery-package-concept-cartoon-.jpg");
+        
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+    .mango{
+        display: block;
+    }
+    .coco{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 301px) and (max-width: 420px){
+    .headingdiv{
+        padding: 13px !important;
+    }
+    .subhead{
+        padding-left: 13px !important;
+    }
+    .inputs{
+        width: 100%;
+    }
+    #signupbtn2{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        margin-top: 14px;
+    }
+    .seconddiv{
+        display: none;
+    }
+    .main9{
+        height: 327px;
+    }
+    .parallax{
+        max-height: 360px !important;
+        background-image: 
+        url("https://previews.123rf.com/images/abdie11/abdie112004/abdie11200400022/144986070-shop-from-home-shopping-delivery-man-riding-scooter-bike-delivering-grocery-package-concept-cartoon-.jpg");
+        
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+    .mainheight{
+        height: 250px;
+    }
+    .thank{
+        font-size: 28px;
+    }
+    .mainlogo{
+
+        width: 141px;
+        height: 49px;
+    }
+    .inputs{
+        padding: 9px 80px !important;
+    }
+    .mango{
+        display: block;
+    }
+    .coco{
+        display: none;
+    }
+}
+@media only screen and (min-width: 420px) and (max-width: 600px){
+    .headingdiv{
+        padding: 13px !important;
+    }
+    .subhead{
+        padding-left: 13px !important;
+    }
+    .inputs{
+        width: 100%;
+    }
+    
+    #signupbtn2{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        margin-top: 14px;
+    }
+    .seconddiv{
+        display: none;
+    }
+    .main9{
+        height: 327px;
+    }
+    .parallax{
+        max-height: 360px !important;
+       
+    }
+    .mainheight{
+        height: 250px;
+    }
+    .mainlogo{
+
+        width: 141px;
+        height: 49px;
+    }
+    .inputs{
+        padding: 9px 80px !important;
+    }
+    .mango{
+        display: block;
+    }
+    .coco{
+        display: none;
+    }
+}
+

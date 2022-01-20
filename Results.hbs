@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link src="css/index.csss" rel="stylesheet" />
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+    {{>Navbar}}
+    <div class="results container">
+
+    </div>
+    <div class="container">
+        <h2 class="heading text-center my-3 text-underline">Fill Out This Form For Medicines</h2>
+        <form method="POST" action="/results" enctype="multipart/form-data">
+            <div class="my-2">
+                <label for="name" class="para">Name Of Person <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="name" required minlength="2">
+            </div>
+            <div class="my-2">
+                <label for="phone" class="para">Phone Number<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="phone" minlength="10" required=>
+            </div>
+            <div class="my-2">
+                <label for="email" class="para">Email Address <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="my-2">
+                <label for="email" class="para">Address<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="Address" required>
+            </div>
+
+            <div class="my-2">
+                <label for="image" class="para">Image Of Prescription<span class="text-danger">*</span></label>
+                <input type="file" class="form-control" name="image" required />
+            </div>
+
+            <div class="my-3">
+                <label for="name of medicine" class="para">Names Of Medicine If Prescription not Available<span
+                        class="text-danger">*</span></label>
+                <textarea rows="2" cols="12" class="form-control" name="text"></textarea>
+
+            </div>
+            <button class="btn btn-primary mt-2" type="submit">Submit</button>
+        </form>
+    </div>
+    {{>Footer}}
+
+</body>
+<script>
+    var preloader = document.getElementById('loading')
+    function myFunction() {
+        preloader.style.display = "none";
+    }
+</script>
+
+</html>

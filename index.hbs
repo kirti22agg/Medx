@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medx</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="css/index.css" rel="stylesheet">
+
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-lg-6 ">
+                <div>
+                    <nav class="container navbar">
+                        <img src="photos/logo.png" alt="Logo" class="mainlogo">
+                        <div class="mt-4">
+
+                            <a href="/logout" class="btn btn-white">{{main}}</a>
+                            <a href="/signup" class="btn btn-primary signupbtn" id="signupbtn">Signup</a>
+
+                        </div>
+                    </nav>
+                    <div class="body">
+                        <div class="headings">
+                            <h1 class="ml3 mt-5 headingdiv heading">Need Medicines Within An Hour?</h1>
+                            <h5 class="subhead para">Order Medicines with Superfast Delivery From MEDX</h5>
+                        </div>
+                    </div>
+
+                    <div class="search mt-4">
+                        <div class="row">
+                            <form class="form-inline my-2 my-lg-0" action="/results" method="POST">
+                                <select class="form-control mr-sm-2 inputs text-left" aria-label="Search"
+                                    placeholder="Search Your Area Here" name="search">
+                                    <option>Choose Your Area</option>
+
+                                    <option>  Vaishali</option>
+                                    <option> Noida Sector-42</option>
+                                    <option> Noida Sector-43</option>
+                                    <option> Noida Sector-44</option>
+                                    <option> Noida Sector-45</option>
+                                    <option> Noida Sector-48</option>
+                                    <option> Noida Sector-49</option>
+                                    <option> Noida Sector-74</option>
+                                    <option> Noida Sector-75</option>
+                                    <option> Noida Sector-76</option>
+                                    <option> Noida Sector-77</option>
+                                    <option> Noida Sector-78</option>
+                                    <option> Noida Sector-82</option>
+                                    <option> Noida Sector-85</option>
+                                    <option> Noida Sector-82</option>
+                                    <option> Noida Sector-85</option>
+                                    <option> Noida Sector-90</option>
+                                    <option> Noida Sector-91</option>
+                                    <option> Noida Sector-92</option>
+                                    <option> Noida Sector-97</option>
+                                    <option> Noida Sector-98</option>
+                                    <option> Noida Sector-99</option>
+                                    <option> Noida Sector-105</option>
+                                    <option> Noida Sector-108</option>
+                                    <option> Noida Sector-116</option>
+                                    <option> Noida Sector-129</option>
+                                    <option> Noida Sector-132</option>
+                                    <option> Noida Sector-136</option>
+                                    <option> Noida Sector-137</option>
+                                    <option> Noida Sector-138</option>
+                                    <option> Noida Sector-140</option>
+                                </select>
+                                <a href="/pharmacy" class="btn btn-primary " id="signupbtn2">Search</a>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="bottom ">
+
+                        <img src="photos/4.jpg" width="55%" />
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-lg-6   seconddiv">
+            </div>
+        </div>
+        {{!-- paralax!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --}}
+        <div class="parallax">
+
+        </div>
+
+    </div>
+    <div class="container my-5 maincon">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 main9 my-3">
+
+            </div>
+            <div class="col-lg-6 col-sm-12 my-3">
+                <h1 class="my-2 heading ">Key Benifits Of <span class="text-primary">MEDX</span> </h1>
+                <p class="para">It’s a terrible moment for pharmacy administrators, as many infected people from
+                    coronavirus are
+                    rising day by day over the country. Pharmacy Industry is fighting with concerns over the security of
+                    its employees and customers, while those living in a larger number of infected people’s places or
+                    areas are closing their medical shops that have led to the main drop in traffic count.</p>
+                <p class="para">The government has tightly commanded the lockdown in the country to stop the spreading
+                    of this virus.
+                    Almost every physical activity, event and meetings has been cancelled or postponed, by the
+                    authorities and connecting online via Video call or audio call from their place. To help the people
+                    MEDX will be there to get medicine easily.</p>
+
+                <h5 class="para font-weight-bold">Our First Priority is Our Customers</h5>
+                <p class="para">MEDX being an application for online delivery of medicines offers various benifits.
+                    Most of the times customer doesn't know where the medicines are coming from but our platform is
+                    completely transparent and shows all the stores we have tie ups with.
+                    Also, our platform offers the fastest delivery of medicines that is withing 1 hour.
+                    All these features combined with strong personalised customer support from our team, makes medX the
+                    best alternative to physically going to pharmacies.</p>
+            </div>
+            <blockquote class="blockquotes text-center jumbotron mt-4 para font-weight-600"
+                style="border-left: 5px solid blue;">
+
+                The greatest disease in the West today is not TB or leprosy; it is being unwanted, unloved, and uncared
+                for. We can cure physical diseases with medicine, but the only cure for loneliness, despair, and
+                hopelessness is love. There are many in the world who are dying for a piece of bread but there are many
+                more dying for a little love. The poverty in the West is a different kind of poverty -- it is not only a
+                poverty of loneliness but also of spirituality. There's a hunger for love, as there is a hunger for
+                God.”<br>
+                <br>
+                <span class="name font-weight-bold ">
+
+                    ― Mother Teresa, A Simple Path: Mother Teresa
+                </span>
+
+            </blockquote>
+        </div>
+    </div>
+
+    {{>Footer}}
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+
+    var textWrapper = document.querySelector('.ml3');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: true })
+        .add({
+            targets: '.ml3 .letter',
+            opacity: [0, 1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+            delay: (el, i) => 150 * (i + 1)
+        }).add({
+            targets: '.ml3',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+
+    var preloader = document.getElementById('loading')
+    function myFunction() {
+        preloader.style.display = "none";
+    }
+</script>
+
+
+
+</html>

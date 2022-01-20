@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+    {{>Navbar}}
+
+    <div class="container mt-4 ">
+
+        {{!-- <h1 class="text-center my-3">Contact Us</h1> --}}
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <form method="POST" action="/contact">
+                    <div class="my-2">
+                        <label for="name"></label>Name</label>
+                        <input type="text" class="form-control" name="name" required="true" min="2">
+                    </div>
+                    <div class="my-2">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control" name="phone" minlength="10" required="true">
+                    </div>
+                    <div class="my-2">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" name="email" required="true">
+                    </div>
+                    <div class="my-2">
+                        <label for="email">Query/Suggesstion</label>
+                        <textarea rows="2" cols="12" class="form-control" name="message"></textarea>
+
+                    </div>
+                    <button class="btn btn-primary mt-2" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="col-lg-6 col-sm-12 mt-3">
+
+                <label for="contact" class="para font-weight-bold">Email</label>
+                <p class="para">medx.team.india@gmail.com</p>
+                <label for="contact" class="font-weight-bold para">Phone Number</label>
+                <p class="para">9643147207</p>
+                <label for="contact" class="font-weight-bold v">Office Address</label>
+                <p class="para">Noida , Uttar pradesh Pincode-110078</p>
+                <div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224369.0356241299!2d77.25804458931252!3d28.51668171112809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1620031333277!5m2!1sen!2sin"
+                        width="290" height="200" style="border:1px solid ;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {{>Footer}}
+</body>
+<script>
+    var preloader = document.getElementById('loading')
+    function myFunction() {
+        preloader.style.display = "none";
+    }
+</script>
+
+</html>
